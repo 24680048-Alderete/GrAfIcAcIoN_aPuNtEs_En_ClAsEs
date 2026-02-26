@@ -253,7 +253,21 @@ La Unidad I ha establecido el piso teórico sobre el que se asienta todo el edif
 2.  Liwanag, A. (2023, April 19). Tipos de archivos de imagen: todo lo que necesita saber sobre las imágenes. Anymp4.com; AnyMP4. https://www.anymp4.com/es/photo-converting/image-file-types-and-differences.html
 3. Villate, L. (2025, April 8). Formatos de imagen: usos, características y diferencias. Hubspot.es. https://blog.hubspot.es/marketing/formatos-de-imagen
 4. (N.d.). Neilpatel.com. Retrieved February 26, 2026, from https://neilpatel.com/br/blog/formatos-de-imagem/
-5. 
+5. Client challenge. (n.d.). Scribd.com. Retrieved February 26, 2026, from https://es.scribd.com/document/393263572/Historia-y-Evolucion-de-La-Graficacion-Por-Computadora
+6. Client challenge. (n.d.-a). Scribd.com. Retrieved February 26, 2026, from https://es.scribd.com/document/393263572/Historia-y-Evolucion-de-La-Graficacion-Por-Computadora
+7. Historia y evolucion DE la graficacion Por computadora Bernardo gerhar. (n.d.). Genially. Retrieved February 26, 2026, from https://view.genially.com/65bc786c9fa689001318901a/interactive-content-historia-y-evolucion-de-la-graficacion-por-computadora-bernardo-gerhar
+8. Machuca, F. (2022, April 1). Aprende qué es un mapa de bits y haz que tus trabajos resalten por su calidad. https://www.crehana.com. https://www.crehana.com/blog/estilo-vida/que-es-mapa-bits/
+9. Client challenge. (n.d.-c). Slideshare.net. Retrieved February 26, 2026, from https://es.slideshare.net/slideshow/1-3-aspectos-matematicos-de-la-graficacion-pdf/282295700
+10. Client challenge. (n.d.-d). Slideshare.net. Retrieved February 26, 2026, from https://es.slideshare.net/slideshow/1-6-procesamiento-de-mapas-de-bits-en-graficacion/282295902
+11. Valdes, A. S., & Completo, V. mi P. (n.d.). Graficación. Blogspot.com. Retrieved February 26, 2026, from https://graficacionito.blogspot.com/2013/09/14-aspectos-matematicos-de-la.html
+
+
+
+
+
+
+
+
 
 
 
