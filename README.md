@@ -131,8 +131,102 @@ Los formatos de imagen se dividen en dos grandes familias:
 
 ### Prácticas de Dibujo con Blender Python API
 En esta sección se presentan dos scripts escritos en Python para Blender que automatizan la construcción de figuras geométricas, relacionadas directamente con los conceptos vistos en 1.5 Representación y trazo de líneas y polígonos. Estos scripts permiten generar un polígono regular 2D (triángulo) y un patrón de círculos conocido como la Flor de la Vida, utilizando únicamente cálculos trigonométricos y la API de Blender.
-#### Script 1: Polígono 2D regular
+## Script 1: Polígono 2D regular (`PoLiGoNo_2D.py`)
 
+Este script define una función que genera un polígono regular de `n` lados, centrado en el origen, y lo añade a la escena de Blender como un objeto de malla.
+```python
+import bpy
+import math
+
+def crear_poligono_2d(nombre, lados, radio):
+    # Crear una nueva malla y un nuevo objeto
+    malla = bpy.data.meshes.new(nombre)
+    objeto = bpy.data.objects.new(nombre, malla)
+
+    # Vincular el objeto a la colección activa
+    bpy.context.collection.objects.link(objeto)
+
+    vertices = []
+    aristas = []
+
+    # Calcular las coordenadas de cada vértice
+    for i in range(lados):
+        angulo = 2 * math.pi * i / lados
+        x = radio * math.cos(angulo)
+        y = radio * math.sin(angulo)
+        vertices.append((x, y, 0))
+
+    # Conectar cada vértice con el siguiente (y el último con el primero)
+    for i in range(lados):
+        aristas.append((i, (i + 1) % lados))
+
+    # Construir la malla a partir de los datos
+    malla.from_pydata(vertices, aristas, [])
+    malla.update()
+
+# Limpiar la escena (opcional)
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+
+# Crear un triángulo de radio 10
+crear_poligono_2d("Poligono2D", lados=8, radio=10)
+```
+<img width="552" height="383" alt="image" src="https://github.com/user-attachments/assets/a3db3778-bfb0-467a-9981-855ae661e12a" />
+
+### Explicación
+Los vértices se calculan mediante coordenadas polares:
+`x = radio * cos(ángulo), y = radio * sen(ángulo)`, con `ángulo = 2π * i / lados`.
+
+Las aristas se definen explícitamente conectando cada vértice con el siguiente (el último con el primero mediante el operador módulo `%`).
+
+Este método refleja el concepto de rasterización de líneas a nivel vectorial: Blender se encarga de dibujar los píxeles finales, pero la definición geométrica sigue los principios de los algoritmos de trazado.
+
+### Instrucciones de uso
+1. Abre Blender.
+2. Cambia al espacio de trabajo Scripting (en la barra superior).
+3. Crea un nuevo texto o pega el código en el editor.
+4. Ejecuta el script con el botón Run Script.
+5. El polígono aparecerá en la escena. Puedes cambiar a vista superior (Num7) para visualizarlo en 2D.
+## Script 2: Flor de la Vida (`FlOr_De_ViDa.py`)
+
+Este script genera un patrón de círculos concéntricos que forman la base de la Flor de la Vida, una figura de geometría sagrada compuesta por múltiples círculos superpuestos con un espaciado regular. El código crea un círculo central y luego, mediante un bucle, añade círculos alrededor en posiciones determinadas por un ángulo y el radio.
+```Python
+import bpy
+import math
+
+# Limpiar la escena
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+
+# Parámetros de la figura
+radio = 3
+paso_angular = 60  # En grados. Para la flor clásica usar 60°
+
+# 1. Círculo central
+bpy.ops.mesh.primitive_circle_add(radius=radio, location=(0, 0, 0), vertices=128)
+
+# Bucle para generar círculos alrededor
+angulo_actual = 0
+while angulo_actual < 360:
+    angulo_actual += paso_angular
+    x = radio * math.cos(math.radians(angulo_actual))
+    y = radio * math.sin(math.radians(angulo_actual))
+    bpy.ops.mesh.primitive_circle_add(radius=radio, location=(x, y, 0), vertices=128)
+```
+<img width="295" height="289" alt="image" src="https://github.com/user-attachments/assets/d238a3fb-d426-4309-8876-991f47024c38" />
+
+### Explicación
+- Se coloca un círculo central en el origen.
+- El bucle recorre los 360° con un incremento angular (`paso_angular`). Para la flor clásica, se usan 60°, lo que genera seis círculos alrededor del central.
+- Las coordenadas de cada nuevo centro se calculan mediante trigonometría:
+  `x = radio * cos(θ)`, `y = radio * sen(θ)`, donde `θ` está en radianes.
+- El número de vértices por círculo (128) asegura que los círculos se vean suaves.
+- Este proceso demuestra cómo transformaciones geométricas (traslación) y la repetición de una operación simple pueden generar una estructura compleja, un principio fundamental en la graficación por computadora.
+### Instrucciones de uso
+1. En Blender, ve al espacio de trabajo Scripting.
+2. Pega el código en el editor de texto.
+3. Ejecuta el script.
+4. Se crearán siete círculos (central + seis alrededor). Puedes rotar la vista para apreciar la simetría.
 ## 1.6. Procesamiento de mapas de bits
 
 El procesamiento digital de imágenes (PDI) se refiere a la manipulación de imágenes de mapa de bits mediante algoritmos computacionales. Algunas operaciones fundamentales son:
