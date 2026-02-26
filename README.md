@@ -249,10 +249,11 @@ La Unidad I ha establecido el piso teórico sobre el que se asienta todo el edif
 
 ### Referencias
 
-1.  DOAJ (Directory of Open Access Journals). (2024). *Research of color models in digital graphics*.
-2.  Smith College. (s.f.). *CSC 240 Laboratory 13: Blender Wooden Cup*.
-3.  Baidu Baike. (2025). *Color Model (颜色模型)*.
-4.  Blender Stack Exchange. (s.f.). *Revisions about lighting inside objects*.
-5.  GitHub - james-alex. (2019). *flutter_color_models*.
-6.  Pub.dev. (2019). *color_models 0.2.5*.
-7.  Aspose. (2024). *ColorModel Enumeration*.
+1.  Vázquez, J. (n.d.). Modelos de color. MindMeister. Retrieved February 26, 2026, from https://www.mindmeister.com/ru/1647489159/modelos-de-color
+2.  Liwanag, A. (2023, April 19). Tipos de archivos de imagen: todo lo que necesita saber sobre las imágenes. Anymp4.com; AnyMP4. https://www.anymp4.com/es/photo-converting/image-file-types-and-differences.html
+3. Villate, L. (2025, April 8). Formatos de imagen: usos, características y diferencias. Hubspot.es. https://blog.hubspot.es/marketing/formatos-de-imagen
+4. (N.d.). Neilpatel.com. Retrieved February 26, 2026, from https://neilpatel.com/br/blog/formatos-de-imagem/
+5. 
+
+
+
