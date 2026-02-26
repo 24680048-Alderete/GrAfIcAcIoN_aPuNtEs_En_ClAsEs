@@ -1,18 +1,20 @@
 # GrAfIcAcIoN_aPuNtEs_En_ClAsEs
 # Unidad I. Introducción a la graficación por computadora.
+La graficación por computadora es una rama de la informática que se ocupa de generar, modificar y presentar imágenes y representaciones visuales a través de algoritmos y herramientas digitales especializadas. Integra fundamentos de matemáticas, programación y diseño para producir gráficos en 2D y 3D que pueden ser visualizados en pantallas, dispositivos móviles o entornos de realidad virtual.
 
+Esta disciplina resulta esencial en sectores como los videojuegos, la animación, el diseño asistido por computadora (CAD), la simulación científica y la producción cinematográfica digital. Mediante procesos como el modelado, el renderizado y la animación, la graficación por computadora hace posible convertir datos y nociones abstractas en representaciones visuales claras e interactivas.
 ## 1.1. Historia y evolución de la graficación por computadora
 
 La graficación por computadora es la disciplina que se encarga de generar, representar y manipular imágenes visuales mediante el uso de computadoras. Su evolución ha sido vertiginosa, pasando de simples representaciones de líneas en monitores a complejos mundos virtuales fotorrealistas.
 
 ### Los inicios (décadas de 1950 y 1960)
-Los primeros pasos de la graficación por computadora están ligados a proyectos militares y de investigación académica. El **Whirlwind I** en el MIT (Instituto Tecnológico de Massachusetts), a principios de los años 50, fue uno de los primeros computadores en utilizar un monitor de tubo de rayos catódicos (CRT) para mostrar gráficos simples. Sin embargo, el hito fundacional se atribuye a **Iván Sutherland**, quien en 1963 presentó su tesis doctoral, **Sketchpad**. Este sistema permitía a los usuarios dibujar sobre una pantalla con un lápiz óptico, interactuando directamente con los objetos gráficos, lo que sentó las bases de la interacción humano-computadora y el diseño asistido por computadora (CAD).
+En la década de 1950, los primeros pasos estuvieron ligados a proyectos militares y académicos. El computador Whirlwind, desarrollado en el MIT, fue pionero al mostrar texto y gráficos en tiempo real en un tubo de rayos catódicos, sentando las bases para sistemas de defensa aérea como SAGE. Paralelamente, en 1958, William Higinbotham creó Tennis for Two utilizando un osciloscopio, demostrando el potencial lúdico de las gráficas. Los años 60 marcaron el nacimiento de la interactividad: Ivan Sutherland, considerado el padre de la graficación, presentó en 1963 su tesis doctoral Sketchpad, un sistema que permitía dibujar con un lápiz óptico sobre la pantalla, introduciendo conceptos como objetos geométricos y restricciones. En 1968, Douglas Engelbart realizó La madre de todas las demostraciones, donde mostró el ratón, el hipertexto y las primeras interfaces gráficas de usuario, sentando las bases de la interacción humano-computadora.
 
 ### La consolidación y el realismo (décadas de 1970 y 1980)
-Durante los años 70, la investigación se centró en añadir realismo a las imágenes. Surgieron conceptos fundamentales como el **sombreado** (desarrollado por Henri Gouraud y Bui Tuong Phong, dando lugar a los sombreados que llevan sus nombres) y las **superficies ocultas** (algoritmo del pintor, Z-buffer). En esta época, **Xerox PARC** desarrolló la interfaz gráfica de usuario (GUI) con ventanas, iconos y menús, popularizada después por Apple y Microsoft. Los años 80 vieron la llegada de las estaciones de trabajo gráficas y los primeros esfuerzos por lograr el **fotorrealismo**, con técnicas como el **trazado de rayos** (ray tracing) y la **radiosidad**, que simulan el comportamiento complejo de la luz.
+Durante los años 70, la investigación se enfocó en añadir realismo a las imágenes. Surgieron técnicas de sombreado como las de Gouraud y Phong, que permitían transiciones suaves de color y reflejos especulares, así como algoritmos para superficies ocultas (como el z-buffer). Además, en Xerox PARC se desarrollaron las primeras interfaces gráficas de usuario con ventanas e iconos, aunque su popularización llegaría después. En el ámbito comercial, Atari llevó los gráficos a los hogares con juegos como Pong, iniciando la industria del entretenimiento electrónico. La década de 1980 trajo la revolución de la computación personal y el cine digital. AutoCAD (1982) transformó el diseño asistido por computadora (CAD) en ingeniería y arquitectura. Pixar, surgida de Lucasfilm, produjo cortometrajes como Luxo Jr. que aplicaban principios de animación tradicional a modelos 3D, demostrando el potencial expresivo del medio. Mientras tanto, Apple popularizó la interfaz gráfica con la Macintosh (1984), acercando las ventanas e iconos al público general.
 
 ### La era digital y la masificación (década de 1990 al presente)
-Con la bajada de costos del hardware, los gráficos por computadora se masificaron. La industria del entretenimiento fue un gran motor: **Pixar** estrenó "Toy Story" (1995), el primer largometraje completamente animado por computadora. Las tarjetas gráficas (GPUs) se volvieron ubicuas en los ordenadores personales, permitiendo videojuegos en 3D y efectos visuales en tiempo real. Hoy en día, la graficación converge con tecnologías como la **realidad virtual (VR)** , la **realidad aumentada (AR)** y el renderizado basado en inteligencia artificial.
+En los años 90, la aceleración por hardware revolucionó los gráficos. Aparecieron estándares como OpenGL y DirectX, que facilitaron el desarrollo de aplicaciones 3D. En 1995, Pixar estrenó Toy Story, el primer largometraje completamente animado por computadora. El lanzamiento de la NVIDIA GeForce 256 en 1999, considerada la primera GPU, trasladó el procesamiento geométrico a hardware dedicado, permitiendo gráficos en tiempo real más complejos. El siglo XXI ha difuminado la frontera entre lo real y lo virtual. Los shaders programables permiten efectos como piel realista o agua dinámica. El trazado de rayos (ray tracing), que simula el comportamiento físico de la luz, se ha vuelto posible en tiempo real gracias a núcleos especializados en las GPUs. Además, la realidad virtual y aumentada integran sensores y visión computacional para crear experiencias inmersivas, mientras que la inteligencia artificial comienza a aplicarse en el renderizado y la generación de contenido. Hoy, la graficación por computadora es una disciplina transversal que impulsa desde el entretenimiento hasta la ciencia, permitiendo visualizar datos y conceptos de formas antes inimaginables.
 
 ## 1.2. Áreas de aplicación
 
@@ -23,6 +25,7 @@ La graficación por computadora es una tecnología transversal que impacta numer
 - **Visualización científica y médica:** Ayuda a comprender grandes volúmenes de datos. En medicina, se utilizan para crear reconstrucciones 3D a partir de tomografías o resonancias magnéticas, planear cirugías y crear simuladores para entrenamiento. En ciencias, se visualizan moléculas, fenómenos meteorológicos o simulaciones astrofísicas.
 - **Simulación y entrenamiento:** Permite crear entornos seguros y controlados para el entrenamiento de pilotos (simuladores de vuelo), conductores de vehículos pesados, personal militar o cirujanos.
 - **Arte digital y diseño gráfico:** Abarca desde la creación de ilustraciones digitales, tipografía y diseño de páginas web hasta el arte generativo y las instalaciones interactivas.
+<img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/1a09497c-8c2b-4a33-9d8e-4afbc13ea60b" />
 
 ## 1.3. Aspectos matemáticos de la graficación
 
@@ -41,10 +44,12 @@ Un modelo de color es una abstracción matemática que permite representar los c
 Es un modelo **aditivo**, basado en la síntesis de la luz. Los colores se crean sumando cantidades de luz roja, verde y azul. La ausencia total de las tres da el negro, y la suma total (a máxima intensidad) da el blanco. Se representa comúnmente como un cubo unitario.
 - **Aplicación:** Es el modelo estándar para todos los dispositivos que emiten luz: monitores de computadora, televisores, proyectores, pantallas de teléfonos móviles, cámaras digitales y escáneres.
 - **Característica:** Es **dependiente del dispositivo**, lo que significa que un mismo valor RGB puede verse ligeramente diferente en dos pantallas distintas.
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/845ac27b-e0fc-417e-ab46-98a343e82d06" />
 
 ### Modelo CMY (Cyan, Magenta, Yellow) y CMYK (Cyan, Magenta, Yellow, Key/Black)
 Es un modelo **sustractivo**, basado en la absorción de la luz. Los colores se crean restando componentes de la luz blanca mediante pigmentos (tinta o pintura). El cian absorbe el rojo, el magenta absorbe el verde y el amarillo absorbe el azul. En teoría, la mezcla de los tres da el negro, pero en la práctica produce un marrón sucio, por lo que en la impresión profesional se añade el negro (K) para mejorar el contraste y la profundidad, dando lugar al modelo **CMYK**.
 - **Aplicación:** Es el modelo estándar para todas las artes gráficas e impresión: impresoras de inyección de tinta, imprentas offset, fotocopiadoras.
+<img width="1920" height="250" alt="image" src="https://github.com/user-attachments/assets/e28b7fe0-73e7-4230-8336-d9303010717f" />
 
 ### Modelo HSV (Hue, Saturation, Value) y HSL (Hue, Saturation, Lightness/Luminance)
 Estos modelos se diseñaron para ser más **intuitivos para el ser humano** que el RGB. Separan el color en tres componentes perceptuales:
@@ -54,6 +59,7 @@ Estos modelos se diseñaron para ser más **intuitivos para el ser humano** que 
     - En **HSV**, el Valor (Value) representa el brillo máximo del color (desde negro hasta el color puro).
     - En **HSL**, la Luminosidad (Lightness) es una mezcla que va desde el negro (0%) hasta el blanco (100%), pasando por el color puro en el 50%.
 - **Aplicación:** Son ampliamente utilizados en software de diseño gráfico y edición de imágenes (como los selectores de color en Photoshop o GIMP), en gráficos por computadora para la selección de colores y en tareas de procesamiento de imágenes donde se quiere operar sobre el color independientemente de la iluminación.
+<img width="1000" height="452" alt="image" src="https://github.com/user-attachments/assets/60aa31dd-4f00-4d20-98b7-eb8a2121a5c3" />
 
 ---
 
@@ -228,20 +234,51 @@ while angulo_actual < 360:
 3. Ejecuta el script.
 4. Se crearán siete círculos (central + seis alrededor). Puedes rotar la vista para apreciar la simetría.
 ## 1.6. Procesamiento de mapas de bits
+El procesamiento de mapas de bits, también conocido como imágenes raster, constituye un pilar fundamental en áreas como la graficación por computadora, la visión artificial y el renderizado digital. A diferencia de los gráficos vectoriales, que se definen mediante ecuaciones matemáticas, una imagen raster se estructura como una rejilla bidimensional de píxeles. Cada píxel, la unidad mínima de información, almacena valores numéricos que representan color, brillo u otras propiedades visuales.
 
-El procesamiento digital de imágenes (PDI) se refiere a la manipulación de imágenes de mapa de bits mediante algoritmos computacionales. Algunas operaciones fundamentales son:
+Estas imágenes, también denominadas bitmap, raster image o imagen matricial, tienen sus dimensiones determinadas por la cantidad de píxeles en horizontal y vertical. Su función principal es capturar y representar el mundo analógico en formato digital: cuando tomamos una fotografía con un smartphone o una cámara profesional, la escena se traduce a datos de píxel que, al visualizarse en pantalla o compartirse en línea, conforman una imagen raster.
+<img width="371" height="211" alt="image" src="https://github.com/user-attachments/assets/f3e4ef88-bbaa-473e-a31c-67ea72c82f1b" />
 
-- **Operaciones puntuales:** Modifican el valor de cada píxel individualmente, sin importar sus vecinos. Ejemplos:
-    - **Ajustes de brillo y contraste:** Sumar una constante a todos los píxeles (brillo) o multiplicar por una constante (contraste).
-    - **Umbralización (Thresholding):** Convertir una imagen a blanco y negro puro basándose en si el valor del píxel supera o no un cierto umbral.
-    - **Inversión de color:** Transformar un color en su complementario (negro a blanco, azul a amarillo, etc.).
-- **Filtrado (Operaciones locales):** El nuevo valor de un píxel se calcula en función de los valores de sus vecinos. Esto se hace mediante una matriz pequeña llamada **kernel** o máscara de convolución.
-    - **Filtros de suavizado (Paso Bajo):** Promedian los píxeles con sus vecinos para reducir el ruido y suavizar la imagen. Ej: Filtro Gaussiano.
-    - **Filtros de realce (Paso Alto):** Detectan bordes y agudizan la imagen. Ej: Filtro de Sobel, Laplaciano.
-- **Operaciones geométricas:** Modifican la disposición espacial de los píxeles.
-    - **Redimensionamiento (Escalado):** Aumentar o disminuir el tamaño de la imagen, lo que implica un proceso de interpolación (vecino más cercano, bilineal, bicúbica) para calcular los nuevos valores de píxel.
-    - **Rotación, traslación y deformación.**
-- **Operaciones en el dominio de la frecuencia:** La imagen se transforma al dominio de la frecuencia (por ejemplo, mediante la Transformada Rápida de Fourier - FFT), se aplican filtros en ese dominio (como eliminar frecuencias altas para suavizar o bajas para realzar bordes), y luego se transforma de vuelta al dominio espacial.
+## Operaciones fundamentales en el procesamiento de imágenes raster
+
+El procesamiento digital de imágenes (PDI) abarca un conjunto de algoritmos que manipulan los píxeles para lograr diversos efectos o extraer información. Estas operaciones pueden clasificarse en varias categorías:
+
+### 1. Operaciones puntuales (píxel a píxel)
+En este tipo de transformación, el valor resultante de cada píxel depende exclusivamente de su valor original, sin considerar los píxeles vecinos. Algunos ejemplos comunes son:
+
+- **Ajuste de brillo y contraste**: se modifica el brillo sumando una constante a cada píxel, mientras que el contraste se altera multiplicando por un factor.
+- **Inversión de color**: se convierte cada color en su complementario (por ejemplo, negro a blanco, azul a amarillo).
+- **Umbralización (thresholding)**: se transforma la imagen en blanco y negro puro según si el valor del píxel supera o no un límite establecido.
+<img width="548" height="343" alt="image" src="https://github.com/user-attachments/assets/d7165dca-4bb6-425a-a987-118267593862" />
+
+### 2. Filtros de vecindad (convolución)
+Aquí el nuevo valor de un píxel se calcula a partir de sus vecinos, utilizando una matriz denominada **kernel** o máscara de convolución que se desliza sobre la imagen. Entre las aplicaciones más frecuentes se encuentran:
+
+- **Desenfoque (blur)**: se promedian los colores de los píxeles cercanos para suavizar la imagen (por ejemplo, filtro gaussiano).
+- **Enfoque (sharpen)**: se realzan las diferencias de color entre píxeles adyacentes para aumentar la nitidez.
+- **Detección de bordes**: algoritmos como Sobel o Canny identifican cambios bruscos de intensidad, resaltando los contornos de los objetos.
+
+### 3. Transformaciones geométricas
+Estas operaciones alteran la disposición espacial de los píxeles:
+
+- **Escalado**: al ampliar o reducir una imagen, es necesario recurrir a técnicas de interpolación (vecino más cercano, bilineal, bicúbica) para determinar los colores de los nuevos píxeles.
+- **Rotación y traslación**: se modifica la orientación o posición de la imagen, lo que también puede requerir interpolación para mantener la calidad.
+<img width="555" height="403" alt="image" src="https://github.com/user-attachments/assets/d7b310d5-605f-4941-8593-78c0301b47c0" />
+
+### 4. Operaciones en el dominio de la frecuencia
+En este enfoque, la imagen se transforma al dominio de la frecuencia mediante herramientas como la **Transformada Rápida de Fourier (FFT)**. Allí se aplican filtros (por ejemplo, eliminar frecuencias altas para suavizar o bajas para realzar bordes) y luego se regresa al dominio espacial.
+
+## Formatos de archivo para mapas de bits
+
+La elección del formato adecuado depende del uso previsto (web, impresión, edición profesional, etc.). A continuación, se describen los más relevantes:
+
+- **JPG / JPEG**: ideal para imágenes de tono continuo (como fotografías) en entornos web, gracias a su buena compresión y calidad. No admite transparencia y no es el formato preferido para fotografía profesional de alta gama, aunque sí es útil para impresión en ciertos contextos.
+- **TIFF**: formato sin compresión (o con compresión lossless) que preserva toda la información de la imagen. Es el estándar para archivos de impresión profesional, ya que admite transparencia y es compatible con la mayoría de programas. Su principal desventaja es el gran tamaño de archivo.
+- **PSD**: formato nativo de Adobe Photoshop que guarda capas, canales alfa (transparencia), objetos inteligentes, efectos y tipografía. Es ideal para flujos de trabajo de diseño gráfico y puede importarse desde otras aplicaciones de Adobe.
+- **GIF**: muy popular en internet por su capacidad de animación y su bajo peso. Utiliza un modo de color indexado (reduce la paleta de colores) y admite transparencia de baja calidad. Es recomendable para imágenes con colores planos, no para fotografías.
+- **PNG**: combina compresión eficiente con soporte para transparencia de alta calidad (canales alfa de 8 y 24 bits). Es el formato preferido para composiciones digitales y elementos web que requieren fondo transparente, manteniendo una buena relación de calidad-peso.
+<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/7f1a5dde-fcf2-453d-b1b2-b156aa691d1d" />
+
 
 ### Conclusión
 
